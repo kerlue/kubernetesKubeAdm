@@ -88,6 +88,14 @@ This documentation guides you in setting up a cluster with one master node and t
     ```sh
     kubeadm init --apiserver-advertise-address=<MasterServerIP> --pod-network-cidr=192.168.0.0/16
     ```
+    ```
+    IF FAILED 
+    had the same error today. try:
+
+    sudo rm /etc/containerd/config.toml
+    sudo systemctl restart containerd
+    sudo kubeadm init
+    ```
 1. Create a user for kubernetes administration  and copy kube config file.   
     ``To be able to use kubectl command to connect and interact with the cluster, the user needs kube config file.``  
     In this case, we are creating a user called `kubeadmin`
