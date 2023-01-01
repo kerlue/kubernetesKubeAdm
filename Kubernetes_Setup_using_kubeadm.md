@@ -22,7 +22,7 @@ This documentation guides you in setting up a cluster with one master node and t
 
    ### `On Master and Worker:`
 1. Perform all the commands as root user unless otherwise specified
- 
+   AWS LIFHTSAIL sudo su -
    Install, Enable and start docker service.
    Use the Docker repository to install docker.
    > If you use docker from CentOS OS repository, the docker version might be old to work with Kubernetes v1.13.0 and above
