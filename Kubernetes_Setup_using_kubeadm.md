@@ -117,6 +117,7 @@ This documentation guides you in setting up a cluster with one master node and t
 1. Cluster join command
     ```sh
     kubeadm token create --print-join-command
+    No Space in sha256 ex: kubeadm join XXX.XX.X.XXX:6443 --token 3v9o33.l2u3881hjtn2fxrn --discovery-token-ca-cert-hash sha256:2356e36cfa1c2924d2b5dad458319b6fe0eb7ff8f2806e8aee5eafa475XXXXX 
     ```
 ## `On Worker Node:`
 1. Add worker nodes to cluster 
